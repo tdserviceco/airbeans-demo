@@ -1,0 +1,16 @@
+.header-container {
+  position: absolute;
+  top: 0;
+  width: 91.5%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: hidden;
+  overflow-y: auto;
+  &.non-adapt {
+    min-height: 0;
+  }
+  &.adapt {
+    min-height: returnCalc(100%, 2.125rem);
+  }
+}

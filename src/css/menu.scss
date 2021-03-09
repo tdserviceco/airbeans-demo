@@ -1,0 +1,81 @@
+@keyframes loading {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@import "./menu-list.scss";
+.menu-for-different-coffee {
+  margin-top: 2rem;
+  position: relative;
+  background: $Airbean_pink;
+  width: 100%;
+  margin-bottom: 2rem;
+  @import "./cart-order.scss";
+  &.loading-done {
+    // Liten "waiting screen"
+    opacity: 1;
+    animation: loading 500ms;
+  }
+  .server-status-title {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .menu-title,
+  .server-status-title {
+    text-transform: capitalize;
+    font-size: 2.625rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .coffee-type {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .button-container {
+    display: flex;
+    margin-right: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    .title-and-price {
+      display: flex;
+      justify-content: center;
+
+      .underline {
+        align-self: flex-end;
+      }
+
+      .title {
+        font-size: 1.4375rem;
+        font-weight: 700;
+        display: flex;
+        min-width: returnCalc(100%, 4.6875rem);
+        border-bottom: 0.0625rem dashed rgba(0, 0, 0, 0.4);
+        line-height: 1.1875rem;
+      }
+      .price {
+        font-size: 1.3rem;
+        font-weight: 700;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+    }
+    .sub-title {
+      margin-top: 0.5rem;
+      font-size: 0.75rem;
+      font-weight: 400;
+      font-family: $worksans;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.home-container {
+  animation: fadeOut 500ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+  height: returnCalc(100vh, 16.9rem);
+  position: relative;
+  background-color: $Airbean_green;
+
+  .home-left {
+    position: absolute;
+    left: 0;
+  }
+  .home-right {
+    position: absolute;
+    right: 0;
+  }
+}

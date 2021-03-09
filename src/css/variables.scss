@@ -1,0 +1,10 @@
+@function returnCalc($number, $differenceNumber) {
+  $value: calc(#{$number} - #{$differenceNumber});
+  @return $value;
+}
+
+@mixin button {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
