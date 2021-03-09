@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import LoadingIcon from '../assets/graphics/loader.png';
-import Drone from '../assets/graphics/drone.svg';
+import LoadingIcon from '../img/graphics/loader.png';
+import Drone from '../img/graphics/drone.svg';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { headerDisplay } from '../actions';

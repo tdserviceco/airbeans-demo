@@ -1,6 +1,6 @@
 import React from 'react';
-import homeLeft from '../assets/graphics/homeLeft.svg';
-import homeRight from '../assets/graphics/homeRight.svg';
+import homeLeft from '../img/graphics/homeLeft.svg';
+import homeRight from '../img/graphics/homeRight.svg';
 
 function NoMatch(props) {
   return (

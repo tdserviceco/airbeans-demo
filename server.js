@@ -1,5 +1,5 @@
 const express = require('express');
-const beansRouter = require('./server/routes/beans');
+const beansRouter = require('./server-assets/routes/beans');
 const path = require('path');
 const port = process.env.PORT || 5000;
 const app = express();

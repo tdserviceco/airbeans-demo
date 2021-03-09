@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from '../components/Header.jsx';
-import ImageTop from '../assets/graphics/graphics-header.svg';
-import ImageBottom from '../assets/graphics/graphics-footer.svg';
-import EvaCortado from '../assets/graphics/eva-cortado.jpg';
+import ImageTop from '../img/graphics/graphics-header.svg';
+import ImageBottom from '../img/graphics/graphics-footer.svg';
+import EvaCortado from '../img/graphics/eva-cortado.jpg';
 
 
 function About(props) {

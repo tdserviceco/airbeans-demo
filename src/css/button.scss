@@ -47,10 +47,10 @@
       height: 1.625rem;
       width: 1.625rem;
       &.adapt {
-        background: url("../assets/graphics/close.svg") center center no-repeat;
+        background: url("../img/graphics/close.svg") center center no-repeat;
       }
       &.non-adapt {
-        background: url("../assets/graphics/navicon.svg") center center no-repeat;
+        background: url("../img/graphics/navicon.svg") center center no-repeat;
       }
     }
   }
@@ -61,7 +61,7 @@
     > div {
       width: 1.0125rem;
       height: 1.85rem;
-      background: url("../assets/graphics/bag.svg") center center no-repeat;
+      background: url("../img/graphics/bag.svg") center center no-repeat;
     }
   }
 
@@ -69,7 +69,7 @@
     > div {
       width: 0.699375rem;
       height: 0.699375rem;
-      background: url("../assets/graphics/add.svg") center center no-repeat;
+      background: url("../img/graphics/add.svg") center center no-repeat;
     }
   }
 }
@@ -91,7 +91,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 0.5rem;
-    background: url("../assets/graphics/arrow-up.svg") no-repeat center center;
+    background: url("../img/graphics/arrow-up.svg") no-repeat center center;
   }
 
   &.down {
@@ -99,6 +99,6 @@
     justify-content: center;
     align-items: center;
     margin-top: 0.5rem;
-    background: url("../assets/graphics/arrow-down.svg") no-repeat center center;
+    background: url("../img/graphics/arrow-down.svg") no-repeat center center;
   }
 }

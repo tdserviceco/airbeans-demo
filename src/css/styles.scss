@@ -1,18 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Work+Sans:wght@400;600;700&display=swap");
 @import "./reset.scss";
 @import "./variables.scss";
 main {
-  //Fonts
-  $worksans: "Work Sans", sans-serif;
-  $ptserif: "PT Serif", serif;
-
-  // Colours
-  $Airbean_brown: #2f2926;
-  $Airbean_pink: #f3e4e1;
-  $Airbean_orange: #e5674e;
-  $Airbean_green: #38846d;
-  $Airbean_white: #fff;
-
   // Pre-sets
   @import "./header.scss";
   min-height: 100vh;

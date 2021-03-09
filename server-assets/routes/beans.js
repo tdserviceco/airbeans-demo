@@ -4,7 +4,7 @@ const fs = require('fs');
 const { generateOrderNr } = require('../utils/utils');
 
 router.get('/', async (req, res) => {
-  const menu = fs.createReadStream('server/data/menu.json');
+  const menu = fs.createReadStream('server-assets/data/menu.json');
   menu.pipe(res);
 });
 

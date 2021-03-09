@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import ImageTop from '../assets/graphics/graphics-header.svg';
-import ImageBottom from '../assets/graphics/graphics-footer.svg';
+import ImageTop from '../img/graphics/graphics-header.svg';
+import ImageBottom from '../img/graphics/graphics-footer.svg';
 import Header from '../components/Header.jsx';
-import loadingAnimation from '../assets/graphics/loader.png';
+import loadingAnimation from '../img/graphics/loader.png';
 import { useDispatch } from 'react-redux';
 import { cartAmount } from '../actions';
 
