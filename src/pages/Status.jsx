@@ -40,11 +40,13 @@ function Status(props) {
     }
     else {
       document.title = `Order kan hämtas om ${eta} minuter`
+      console.log(eta)
       const timer =
-        eta > 0 && setInterval(() => updateEta(eta - 1), 1000);
+        eta > 0 && setInterval(() => updateEta(eta - 1), 60000);
       return () => clearInterval(timer);
+
     }
-  }, [eta, loading])
+  }, [eta, !loading])
 
   return (
     <section className="status-section">
