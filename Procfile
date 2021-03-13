@@ -1,1 +1,1 @@
-web: npm run launchMe
+web: node server.js
