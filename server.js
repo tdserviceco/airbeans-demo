@@ -12,4 +12,4 @@ app.use('/api/beans', beansRouter)
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
-app.listen(port);
+app.listen(port, () => console.log(`Listen to http://localhost:${port}`));
