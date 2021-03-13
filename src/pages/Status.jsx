@@ -39,8 +39,7 @@ function Status(props) {
       return;
     }
     else {
-      document.title = `Order kan hämtas om ${eta} minuter`
-      console.log(eta)
+      document.title = `Order kan hämtas om ${eta} minuter`;
       const timer =
         eta > 0 && setInterval(() => updateEta(eta - 1), 60000);
       return () => clearInterval(timer);
