@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve",
-    "build": "cross-env NODE_ENV=production webpack",
-    "launchMe": "node server"
+    "build": "cross-env NODE_ENV=production webpack"
   },
   "keywords": [],
   "author": "",
@@ -47,7 +46,6 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.2",
     "redux": "^4.0.5",
-    "redux-devtools-extension": "^2.13.8",
-    "request": "^2.88.2"
+    "redux-devtools-extension": "^2.13.8"
   }
 }

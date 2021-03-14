@@ -1,62 +1,11 @@
 @import "./reset.scss";
 @import "./variables.scss";
-main {
-  // Pre-sets
-  @import "./header.scss";
+#root {
   min-height: 100vh;
-  width: 100%;
-  font-family: $ptserif;
-  @import "./button.scss";
-
-  .home-section,
-  .about-section,
-  .error-section,
-  .status-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 23.4375rem;
-    margin: 0 auto;
-    @import "./home.scss";
-    @import "./menu.scss";
-    @import "./about.scss";
-    @import "./error.scss";
-    @import "./status.scss";
-  }
-
-  .underline,
-  .total-sum-underline {
-    border-bottom: dashed 0.0625rem rgba(0, 0, 0, 0.4);
-    width: 100%;
-    align-self: center;
-    margin-right: 0.625rem;
-  }
-
-  .cart-container,
-  .menu-container {
-    position: relative;
-    &.adapt {
-      z-index: 2;
-    }
-    &.non-adapt {
-      z-index: 0;
-    }
-    .badge {
-      border-radius: 50%;
-      background: $Airbean_orange;
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      top: -0.25rem;
-      right: 0;
-      width: 1.375rem;
-      height: 1.375rem;
-      .number {
-        font-size: 0.875rem;
-        color: $Airbean_white;
-      }
-    }
+  h1 {
+    //Mixin from variables.scss
+    @include demo;
+    //function from variables.scss
+    height: returnCalc(100%, 3rem);
   }
 }

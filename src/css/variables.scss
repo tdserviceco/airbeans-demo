@@ -1,27 +1,13 @@
-//Functions
-
 @function returnCalc($number, $differenceNumber) {
   $value: calc(#{$number} - #{$differenceNumber});
   @return $value;
 }
 
-//Mixins
-
-@mixin button {
-  border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
+@mixin demo {
+  color: yellow;
+  font-size: 2rem;
 }
 
-//Fonts
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Work+Sans:wght@400;600;700&display=swap");
-
-$worksans: "Work Sans", sans-serif;
-$ptserif: "PT Serif", serif;
-
-// Colours
-$Airbean_brown: #2f2926;
-$Airbean_pink: #f3e4e1;
-$Airbean_orange: #e5674e;
-$Airbean_green: #38846d;
-$Airbean_white: #fff;
+@mixin name {
+  // like button setup or other "ready-to-use" stuff
+}
