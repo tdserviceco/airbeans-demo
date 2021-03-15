@@ -1,0 +1,104 @@
+.btn {
+  @include button;
+  &.navigation,
+  &.add,
+  &.cart,
+  &.accept-order,
+  &.done {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: $Airbean_brown;
+    > div {
+      pointer-events: none;
+    }
+  }
+
+  &.accept-order,
+  &.done {
+    width: 15.5rem;
+    height: 3.4375rem;
+    border-radius: 2rem;
+    color: $Airbean_white;
+    margin: 2rem auto;
+    > .button-text {
+      font-family: $ptserif;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+  }
+
+  &.done {
+    background: $Airbean_white;
+    color: $Airbean_brown;
+    text-decoration: none;
+    :hover {
+      text-decoration: underline;
+    }
+  }
+
+  &.navigation {
+    background: $Airbean_white;
+    height: 3rem;
+    width: 3rem;
+    > div {
+      height: 1.625rem;
+      width: 1.625rem;
+      &.adapt {
+        background: url("../img/graphics/close.svg") center center no-repeat;
+      }
+      &.non-adapt {
+        background: url("../img/graphics/navicon.svg") center center no-repeat;
+      }
+    }
+  }
+
+  &.cart {
+    height: 3.75rem;
+    width: 3.75rem;
+    > div {
+      width: 1.0125rem;
+      height: 1.85rem;
+      background: url("../img/graphics/bag.svg") center center no-repeat;
+    }
+  }
+
+  &.add {
+    > div {
+      width: 0.699375rem;
+      height: 0.699375rem;
+      background: url("../img/graphics/add.svg") center center no-repeat;
+    }
+  }
+}
+
+.arrow {
+  border: none;
+  width: 100%;
+  height: 0.25rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  z-index: 3;
+  &.up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    background: url("../img/graphics/arrow-up.svg") no-repeat center center;
+  }
+
+  &.down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    background: url("../img/graphics/arrow-down.svg") no-repeat center center;
+  }
+}

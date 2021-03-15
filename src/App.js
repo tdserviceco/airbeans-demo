@@ -1,22 +1,29 @@
-import React, {useEffect} from 'react';
-import Img from './img/logo.png';
-import DemoComp from './components/DemoComp'; // Demo purpose only
+import React from 'react';
+import {
+  Switch,
+  Route
+} from "react-router-dom";
+import './css/styles.scss';
+
+import Home from './pages/Home';
+import About from './pages/About';
+import Status from './pages/Status';
+import NoMatch from './pages/NoMatch';
 
 function App() {
-  const env = process.env.NODE_ENV;
-  useEffect(() => {
-    document.title = "Demo page"
- }, []);
+  localStorage.setItem('loading', true);
+  localStorage.setItem('display', false);
 
   return (
-    <main>
-      <h1>Helloworld</h1>
-      <p>Demo text from ReactJS</p>
-      <em>Your using: {env}</em>
-      <img src={Img} alt="reactJS" />
-      <DemoComp text="Comp" />
+    <main className="App">
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path='/about' component={About} />
+        <Route path='/status' component={Status} />
+        <Route path='*' component={NoMatch} />
+      </Switch>
     </main>
-  )
+  );
 }
 
 export default App;

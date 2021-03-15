@@ -1,0 +1,15 @@
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+  background-color: $Airbean_green;
+
+  .error-text {
+    font-size: 2rem;
+    font-family: $worksans;
+    font-weight: 700;
+    color: $Airbean_brown;
+  }
+}

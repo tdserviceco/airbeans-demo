@@ -1,0 +1,72 @@
+.status-container {
+  width: 100%;
+  background: $Airbean_orange;
+  margin-top: 2rem;
+  height: 100%;
+  &.loading-screen {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 23.4375rem;
+    //Loading screen är i detta fall jag lägger en fast höjd!
+    height: 41.6875rem;
+  }
+  .bold {
+    font-weight: 700;
+  }
+  > .loading-container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem 1rem;
+  }
+  .order-number-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .order-number {
+      padding: 4rem 2rem;
+      color: rgba(255, 255, 255, 0.8);
+      font-family: $worksans;
+      font-size: 1rem;
+      font-weight: 400;
+      text-transform: capitalize;
+    }
+  }
+  .drone-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .delivery-text,
+  .eta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: $ptserif;
+    font-weight: 700;
+    padding: 2rem 3rem;
+    font-size: 2.26rem;
+    color: $Airbean_white;
+  }
+  .eta-container {
+    font-size: 1.3125rem;
+    margin-bottom: 2rem;
+    font-family: $worksans;
+    > h2 {
+      font-weight: 400;
+    }
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $ptserif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
