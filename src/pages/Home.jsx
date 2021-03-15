@@ -22,7 +22,7 @@ function Home(props) {
     [apiDown, updateApiDown] = useState(false)
 
   const fetchMenu = async () => {
-    return await axios.get('http://localhost:5000/api/beans');
+    return await axios.get('https://airbeans-server.herokuapp.com/api/beans');
   }
 
   useEffect(() => {

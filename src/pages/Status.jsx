@@ -16,7 +16,7 @@ function Status(props) {
   let [eta, updateEta] = useState(0);
 
   const orderConfirmationSetup = async () => {
-    return await axios.post('http://localhost:5000/api/beans');
+    return await axios.post('https://airbeans-server.herokuapp.com/api/beans');
   }
 
 

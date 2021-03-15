@@ -22,7 +22,7 @@ function FilterItems(props) {
   })
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/beans').then(res => {
+    axios.get('https://airbeans-server.herokuapp.com/api/beans').then(res => {
       updateMenu(res.data.menu)
     }).catch(err => console.error(err));
   }, [])
